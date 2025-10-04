@@ -5,6 +5,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/saludo', function () {
+Route::get('/bienvenido', function () {
     return view('bienvenidos');
 });
