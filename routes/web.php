@@ -8,8 +8,8 @@ Route::get('/', function () {
 });
 
 //Ruta para estudiantes
-Route::resourse('/estudiantes', EstudianteController::class);
+Route::resource('/estudiantes', EstudianteController::class);
     
 //Rutas para asistencias
-Route::get('/asistencias', [AsistenciaController::class, 'index'])->name('asistencia.index');
-Route::post('/asistencias', [AsistenciaController::class, 'store'])->name('asistencia.store');
+Route::get('/asistencias', [AsistenciaController::class, 'index'])->name('asistencias.index');
+Route::post('/asistencias', [AsistenciaController::class, 'store'])->name('asistencias.store');
